@@ -3,10 +3,11 @@ layout: page
 title: Sample Portfolio Layout
 ---
 <div class="span16">
+  {{ content }}
   <h1>Our Portfolio</h1>
 
   <ul id="projects">
-    {% for project in page.projects %}
+    {% for project in site.projects %}
       <li class="project span5">
         <a href="/portfolio/{{ project[0] }}">
           {% if project[1].image %}
